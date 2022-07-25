@@ -14,6 +14,14 @@
 
                 <br><br>
 
+                <pre>
+                    {{ $fetchState }}
+                </pre>
+
+                <pre>
+                    <div v-for="service in services " :key="service.id"> {{ service.username }}</div>
+                </pre>
+
                 <NuxtChild />
 
             </div>
@@ -28,7 +36,12 @@
 
     data() {
         return {
+            services: []
         };
+    },
+
+    async fetch() {
+        this.services = await this.$axios.$get('https://jsonplaceholder.typicode.com/users')
     },
 
     methods: {},
