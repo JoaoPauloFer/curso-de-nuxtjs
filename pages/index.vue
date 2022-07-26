@@ -1,5 +1,11 @@
 <template>
   <div>
+
+
+    <VTooltip>
+      <a>Sponsor me</a>
+    </VTooltip>
+
     <pre>
       {{ $store.state.user }}
     </pre>
@@ -15,6 +21,20 @@ import { mapState } from 'vuex';
 
 export default {
   name: 'IndexPage',
+
+  data() {
+    return {
+
+    }
+  },
+
+  created() {
+    console.log(this.$name('João Paulo'));
+  },
+
+  mounted() {
+    console.log(this.$dayjs().format())
+  },
 
   computed: {
     ...mapState({
