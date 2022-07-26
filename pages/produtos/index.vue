@@ -11,6 +11,7 @@
 
                 <pre>
                     {{ products }}
+
                 </pre>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus ad eaque, praesentium aliquam odio quia et, laboriosam sint minus nostrum omnis tempora quis. Minus ad dicta saepe mollitia nesciunt.</p>
             </div>
@@ -32,10 +33,12 @@
 
       const products = await $axios.$get('https://jsonplaceholder.typicode.com/posts?_limit=3')  
       return {
-        products
+        products,
       }
     },
 
-    methods: {},
+    methods: {
+
+    },
    };
 </script>

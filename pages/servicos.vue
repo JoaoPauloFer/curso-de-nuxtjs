@@ -15,7 +15,7 @@
                 <br><br>
 
                 <pre>
-                    {{ $fetchState }}
+                    <!-- {{ $fetchState }} -->
                 </pre>
 
                 <pre>
@@ -30,12 +30,26 @@
 </template>
 
 <script>
+import { set } from 'vue';
 
    export default {
     name:'',
 
+    head() {
+        return {
+            title: this.title,
+            meta: [
+                { hid: 'description', name: 'description', content: 'Minha descrição do serviço' }
+                ],
+                bodyAttrs: {
+                    class: 'bg-gray-400'
+                }
+        }
+    },
+
     data() {
         return {
+            title: '',
             services: []
         };
     },
@@ -44,6 +58,16 @@
         this.services = await this.$axios.$get('https://jsonplaceholder.typicode.com/users')
     },
 
-    methods: {},
+    created() {
+        this.getTitle();
+    },
+
+    methods: {
+        getTitle() {
+            setTimeout(() => {
+                this.title = 'Serviços'
+            }, 3000)
+        }
+    },
    }
 </script>
