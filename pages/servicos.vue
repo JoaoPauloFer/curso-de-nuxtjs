@@ -55,7 +55,7 @@ import { set } from 'vue';
     },
 
     async fetch() {
-        this.services = await this.$axios.$get('https://jsonplaceholder.typicode.com/users')
+        this.services = await this.$axios.$get('users')
     },
 
     created() {

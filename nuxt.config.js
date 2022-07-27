@@ -40,6 +40,7 @@ export default {
     },
     '@/plugins/dayjs',
     '@/plugins/vtooltip',
+    '@/plugins/axios',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -49,12 +50,16 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+  ],
+  
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
     '@nuxtjs/axios'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  axios: {
+    baseURL:'/',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
