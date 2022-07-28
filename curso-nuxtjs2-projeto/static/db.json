@@ -2,7 +2,7 @@
   "transactions": [
     {
       "id": 1,
-      "description": "teste update transaction",
+      "description": "Pagamento de domínio .com.br",
       "amount": 40,
       "date": "2022-01-01",
       "categoryId": 1
@@ -29,13 +29,6 @@
       "categoryId": 2
     },
     {
-      "id": 5,
-      "description": "IPVA",
-      "amount": 750,
-      "date": "2022-01-07",
-      "categoryId": 3
-    },
-    {
       "id": 6,
       "description": "Cinema",
       "amount": 60,
@@ -48,20 +41,6 @@
       "amount": 100,
       "date": "2022-01-10",
       "categoryId": 4
-    },
-    {
-      "id": 8,
-      "description": "Google stcok",
-      "amount": 100,
-      "date": "2022-01-15",
-      "categoryId": 5
-    },
-    {
-      "description": "adsd",
-      "amount": 100,
-      "categoryId": 1,
-      "date": "2022-01-01",
-      "id": 9
     }
   ],
   "categories": [
@@ -74,16 +53,8 @@
       "name": "Salário e freelas"
     },
     {
-      "id": 3,
-      "name": "Impostos"
-    },
-    {
       "id": 4,
       "name": "Entretenimento"
-    },
-    {
-      "id": 5,
-      "name": "Investimentos"
     }
   ]
 }
