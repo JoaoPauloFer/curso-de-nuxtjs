@@ -29,6 +29,13 @@
       "categoryId": 2
     },
     {
+      "id": 5,
+      "description": "IPVA",
+      "amount": 750,
+      "date": "2022-01-07",
+      "categoryId": 3
+    },
+    {
       "id": 6,
       "description": "Cinema",
       "amount": 60,
@@ -41,6 +48,20 @@
       "amount": 100,
       "date": "2022-01-10",
       "categoryId": 4
+    },
+    {
+      "id": 8,
+      "description": "Google stcok",
+      "amount": 100,
+      "date": "2022-01-15",
+      "categoryId": 5
+    },
+    {
+      "date": "2015-07-05",
+      "amount": "1000",
+      "description": "muito caro",
+      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
+      "id": 9
     }
   ],
   "categories": [
@@ -53,8 +74,16 @@
       "name": "Salário e freelas"
     },
     {
+      "id": 3,
+      "name": "Impostos"
+    },
+    {
       "id": 4,
       "name": "Entretenimento"
+    },
+    {
+      "id": 5,
+      "name": "Investimentos"
     }
   ]
 }
