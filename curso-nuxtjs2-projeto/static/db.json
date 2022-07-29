@@ -10,7 +10,7 @@
     {
       "id": 2,
       "description": "Curso Laravel PRO",
-      "amount": 19.9,
+      "amount": 19.90,
       "date": "2022-01-01",
       "categoryId": 1
     },
@@ -55,13 +55,6 @@
       "amount": 100,
       "date": "2022-01-15",
       "categoryId": 5
-    },
-    {
-      "date": "2015-07-05",
-      "amount": "1000",
-      "description": "muito caro",
-      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
-      "id": 9
     }
   ],
   "categories": [
