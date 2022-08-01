@@ -37,8 +37,8 @@
     },
     {
       "id": 6,
-      "description": "Cinema2",
-      "amount": 60,
+      "description": "Cinemaa",
+      "amount": "100",
       "date": "2022-01-10",
       "categoryId": 4
     },
